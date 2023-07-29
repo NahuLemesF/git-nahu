@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Botones</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página</h1>
+    </header>
+    
+    <main>
+        <p>¡Hola! Esta es una página HTML básica.</p>
+        <button onclick="saludar()">Saludar</button>
+        <button onclick="mostrarMensaje()">Mostrar Mensaje</button>
+    </main>
+
+    <script>
+        function saludar() {
+            alert('¡Hola! ¡Bienvenido a mi página!');
+        }
+
+        function mostrarMensaje() {
+            var mensaje = prompt('Escribe un mensaje:');
+            if (mensaje) {
+                alert('Tu mensaje: ' + mensaje);
+            }
+        }
+    </script>
+    
+    <footer>
+        <p>Derechos de autor &copy; 2023 - Mi Página</p>
+    </footer>
+</body>
+</html>
